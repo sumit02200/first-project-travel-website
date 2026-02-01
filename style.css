@@ -50,7 +50,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  background-image: url('.Image/Travel_24_OBGA.AdobeStock_173631643_Travel.jpg');
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -187,3 +187,4 @@ footer {
   object-fit: cover;
   border-radius: 10px;
 }
+
