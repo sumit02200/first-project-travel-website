@@ -109,7 +109,7 @@ nav ul li a:hover {
 
 /* next day*/
 
-.card {
+/* .card {
   background: white;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -119,6 +119,32 @@ nav ul li a:hover {
 
 .card:hover {
   transform: scale(1.05);
+}
+*/
+
+.card{
+  font-size:18px;
+  color:white;
+  /*color:#00ffff;*/
+  padding:15px 40px;
+  background:black;
+  border:2px solid #00ffff;
+  border-radius:10px;
+  cursor:pointer;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  transition:0.3s;
+  box-shadow:0 0 10px #00ffff,
+  0 0 20px #00ffff,
+  0 0 40px #00ffff;
+}
+
+.card:hover{
+  background:#00ffff;
+  color:#000;
+  box-shadow:0 0 20px #00ffff,
+  0 0 40px #00ffff,
+  0 0 80px #00ffff;
 }
 
 .card img {
@@ -150,18 +176,34 @@ nav ul li a:hover {
 /* Contact Section */
 .contact {
   padding: 60px 50px;
+  height: 200px;
   text-align: center;
   background: #009688;
   color: white;
 }
 
-.contact .btn {
+/* .contact .btnn {
   background-color: white;
   color: #009688;
 }
 
-.contact .btn:hover {
+.contact .btnn:hover {
   background-color: #f1f1f1;
+}
+*/
+
+.contact .btnn {
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  color: #590a7e;
+  /*color: #009688; */
+  margin: 20px auto;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 50px;
+}
+
+.contact .btnn:hover {
+  background: #f1f1f1;
 }
 
 /* Footer */
@@ -193,5 +235,6 @@ footer {
   object-fit: cover;
   border-radius: 10px;
 }
+
 
 
