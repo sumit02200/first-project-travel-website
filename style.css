@@ -107,8 +107,6 @@ nav ul li a:hover {
   gap: 30px;
 }
 
-/* next day*/
-
 /* .card {
   background: white;
   border-radius: 10px;
@@ -219,22 +217,39 @@ footer {
   object-fit: cover;
   border-radius: 10px;
 }
-/* Paris Gallery Images */
-#gallery .card img {
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-#gallery .card img {
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-#gallery .card img {
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-}
 
+@media (max-width: 768px) {
 
+  .hero h1 {
+    font-size: 2rem;
+  }
 
+  .hero p {
+    font-size: 1rem;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  .destinations {
+    padding: 30px 20px;
+  }
+
+  .about {
+    padding: 30px 20px;
+  }
+
+  .contact {
+    padding: 30px 20px;
+  }
+
+  .card {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
