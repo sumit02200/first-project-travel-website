@@ -37,13 +37,16 @@ Travel-Website/
         ├──Maldives.html
         ├──Newyork.html
         ├──paris.html
-        ├──tokyo.html
+        └──tokyo.html
 ├── static/
 │   └── style.css
-|   └──image/
-|       └──images
-├── images/
+|    └──image/
+|        └──images
+├── images
 └── README.md
+└──requirements.txt
+└──users.db
+└──script.js
 
 # Screenshots
 # Before 
