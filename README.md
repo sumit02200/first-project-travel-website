@@ -32,13 +32,16 @@ JavaScript
 
 Travel-Website/
 │
-├── index.html
-├──Maldives.html
-├──Newyork.html
-├──paris.html
-├──tokyo.html
-├── css/
+| └──templates
+        └── dashboard.html
+        ├──Maldives.html
+        ├──Newyork.html
+        ├──paris.html
+        ├──tokyo.html
+├── static/
 │   └── style.css
+|   └──image/
+|       └──images
 ├── images/
 └── README.md
 
