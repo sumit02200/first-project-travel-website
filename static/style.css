@@ -50,7 +50,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background-image: url('.Image/Travel_24_OBGA.AdobeStock_173631643_Travel.jpg');
+  background-image: url('image/Travel_24_OBGA.AdobeStock_173631643_Travel.jpg');
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -253,3 +253,4 @@ footer {
     font-size: 14px;
   }
 }
+
