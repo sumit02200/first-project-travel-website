@@ -28,3 +28,23 @@ def get_db():
 @app.route("/")
 def home():
     return redirect("/signin")
+
+# SIGN UP
+@app.route("/signup", methods=["GET","POST"])
+def signup():
+    if request.method == "POST":
+        username = request.form["username"]
+        email = request.form["email"]
+        password = generate_password_hash(request.form["password"])
+
+        try:
+            db = get_db()
+            db.execute("INSERT INTO users(username,email,password) VALUES (?,?,?)",
+                       (username,email,password))
+            db.commit()
+            db.close()
+            return redirect("/signin")
+        except:
+            return "User already exists ❌"
+
+    return render_template("signup.html")
