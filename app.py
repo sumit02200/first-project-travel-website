@@ -48,3 +48,22 @@ def signup():
             return "User already exists ❌"
 
     return render_template("signup.html")
+
+# SIGN IN
+@app.route("/signin", methods=["GET","POST"])
+def signin():
+    if request.method == "POST":
+        username = request.form["username"]
+        password = request.form["password"]
+
+        db = get_db()
+        user = db.execute("SELECT * FROM users WHERE username=?",(username,)).fetchone()
+        db.close()
+
+        if user and check_password_hash(user[3], password):
+            session["user"] = username
+            return redirect("/dashboard")
+        else:
+            return "Invalid Login ❌"
+
+    return render_template("signin.html")
