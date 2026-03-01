@@ -74,3 +74,9 @@ def dashboard():
     if "user" not in session:
         return redirect("/signin")
     return render_template("dashboard.html", user=session["user"])
+
+# maldives
+@app.route("/maldives")
+def maldives():
+    return render_template("maldives.html")
+
