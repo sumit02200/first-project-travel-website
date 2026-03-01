@@ -67,3 +67,10 @@ def signin():
             return "Invalid Login ❌"
 
     return render_template("signin.html")
+
+# DASHBOARD
+@app.route("/dashboard")
+def dashboard():
+    if "user" not in session:
+        return redirect("/signin")
+    return render_template("dashboard.html", user=session["user"])
