@@ -14,12 +14,13 @@ body {
 
 /* Header */
 header {
+  padding: 15px 20px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #009688;
   color: #fff;
-  padding: 15px 50px;
   position: sticky;
   top: 0;
 }
@@ -78,9 +79,10 @@ nav ul li a:hover {
   margin: 20px auto;
   max-width: 200px;
   padding: 10px 25px;
-  border-radius: 25px;
+  border-radius: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   font-weight: bold;
 }
