@@ -11,10 +11,10 @@
 
   <!-- Header -->
   <header>
-    <div class="logo"><img src=".Images/Favicon-icon-Image.png" alt="logo" style="height: 40px;"> Dream Destinations</div>
+    <div class="logo"><img src="./static/image/logo.png" alt="logo" style="height: 40px;"> Dream Destinations</div>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="{{ url_for('dashboard') }}">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -23,7 +23,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');">
+  <section class="hero" style="background-image: url('https://afar.brightspotcdn.com/dims4/default/ea28eda/2147483647/strip/false/crop/3000x1688+0+275/resize/1200x675!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fb2%2Ff4%2F9a1ebe3f427f8e5eb937f8df8998%2Ftravelguides-maldives-videomediastudioeurope-shutterstock.jpg');">
     <h1>Welcome to the Maldives</h1>
     <p>Tropical paradise of turquoise waters and coral reefs.</p>
   </section>
@@ -70,6 +70,3 @@
 
 </body>
 </html>
-
-
-
