@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paris, France - Dream Destinations</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="/Images/Favicon-icon-Image.png" type="image/x-icon">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="shortcut icon" href="/static/image/logo.png" type="image/x-icon">
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <div class="logo"><img src=".Images/Favicon-icon-Image.png" alt="logo" style="height: 40px;"> Dream Destinations</div>
+    <div class="logo"><img src="./static/image/logo.png" alt="logo" style="height: 40px;"> Dream Destinations</div>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="{{ url_for('dashboard') }}">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -39,9 +39,9 @@
     <h2>Photo Gallery</h2>
     <div class="destination-container">
       <div class="card"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Eiffel Tower"></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1522098543979-ffc7f79d9f7e" alt="Louvre Museum"></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1543340903-0e6b7c5721d2" alt="Notre Dame"></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade" alt="Paris Street"></div>
+      <div class="card"><img src="https://worldinparis.com/wp-content/uploads/2022/01/View-from-the-Pantheon.jpg" alt="Louvre Museum"></div>
+      <div class="card"><img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2023/12/11155535/Paris.jpg?tr=w-480,f-jpg,pr-true" alt="Notre Dame"></div>
+      <div class="card"><img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_432,h_288,c_fill,q_85/activities/l76odhh7mpat0iha4xas.webp" alt="Paris Street"></div>
     </div>
   </section>
 
@@ -71,5 +71,3 @@
 
 </body>
 </html>
-
-
