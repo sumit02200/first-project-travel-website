@@ -80,3 +80,26 @@ def dashboard():
 def maldives():
     return render_template("maldives.html")
 
+#paris
+@app.route("/paris")
+def paris():
+    return render_template("paris.html")
+
+#tokyo
+@app.route("/tokyo")
+def tokyo():
+    return render_template("tokyo.html")
+
+#newyork
+@app.route("/newyork")
+def newyork():
+    return render_template("newyork.html")
+
+# LOGOUT
+@app.route("/logout")
+def logout():
+    session.pop("user",None)
+    return redirect("/signin")
+
+if __name__ == "__main__":
+    app.run(debug=True,port=5001)
