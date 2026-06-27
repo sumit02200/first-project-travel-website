@@ -1,20 +1,30 @@
 <!DOCTYPE html>
+<html>
+<head>
+<title>Sign In</title>
+<link rel="stylesheet" href="/static/styles.css">
+<link rel="shortcut icon" href="/static/image/logo.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="auth-card">
+<h2>Welcome Back</h2><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tokyo, Japan - Dream Destinations</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="/Images/Favicon-icon-Image.png" type="image/x-icon">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="shortcut icon" href="/static/image/logo.png" type="image/x-icon">
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <div class="logo"><img src=".Images/Favicon-icon-Image.png" alt="logo" style="height: 40px;"> Dream Destinations</div>
+    <div class="logo"><img src="./static/image/logo.png" alt="logo" style="height: 40px;"> Dream Destinations</div>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="{{ url_for('dashboard') }}">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -23,7 +33,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1549692520-acc6669e2f0c');">
+  <section class="hero" style="background-image: url('https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/gettyimages-1390815938?_a=BAVAZGID0');">
     <h1>Welcome to Tokyo</h1>
     <p>The city where tradition meets technology.</p>
   </section>
@@ -39,9 +49,9 @@
     <h2>Photo Gallery</h2>
     <div class="destination-container">
       <div class="card"><img src="https://images.unsplash.com/photo-1549693578-d683be217e58" alt="Tokyo at Night"></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1505066836043-7dcded1dbbb1" alt="Tokyo Tower"></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c" alt="Shibuya Crossing"></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1554797589-7241bb691973" alt="Sensoji Temple"></div>
+      <div class="card"><img src="https://bloggeratlarge.com/wp-content/uploads/2019/08/Tokyo.jpg" alt="Tokyo Tower"></div>
+      <div class="card"><img src="https://media.istockphoto.com/id/491924730/photo/busy-shibuya-crossing-in-tokyo.jpg?s=612x612&w=0&k=20&c=FLvW_BkUV5UP8LLQJM7_Rx09LiGFDFuHcNJ6WPQKcI0=" alt="Shibuya Crossing"></div>
+      <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfPtRT3iHc_Hif_X7lGQScLMFr9MRsmWoMog&s" alt="Sensoji Temple"></div>
     </div>
   </section>
 
@@ -73,4 +83,16 @@
 </html>
 
 
+<form method="POST" action="/signin">
+<input name="username" placeholder="Username" required>
+<input type="password" name="password" placeholder="Password" required>
 
+<button>Sign In</button>
+
+<p>No account? <a href="/signup">Create one</a></p>
+</form>
+
+</div>
+
+</body>
+</html>
