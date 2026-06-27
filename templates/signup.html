@@ -6,6 +6,32 @@
 <link rel="shortcut icon" href="/static/image/logo.png" type="image/x-icon">
 </head>
 <body>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+<link rel="stylesheet" href="/static/styles.css">
+<link rel="shortcut icon" href="/static/image/logo.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="auth-card">
+<h2>Create Account</h2>
+
+<form method="POST" action="/signup">
+<input name="username" placeholder="Username" required>
+<input name="email" placeholder="Email" required>
+<input type="password" name="password" placeholder="Password" required>
+
+<button>Register</button>
+
+<p>Already registered? <a href="/signin">Sign in</a></p>
+</form>
+
+</div>
+
+</body>
+</html>
 
 <div class="auth-card">
 <h2>Create Account</h2>
