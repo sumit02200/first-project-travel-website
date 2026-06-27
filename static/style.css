@@ -51,7 +51,9 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background-image: url('image/Travel_24_OBGA.AdobeStock_173631643_Travel.jpg');
+  /*background-image: url('./image/Travel_40_OBGA.AdobeStock_132265013_Travel.jpg');*/
+  background-image: url("image/Travel_24_OBGA.AdobeStock_173631643_Travel.jpg");
+  /*background-image: url(https://img.freepik.com/free-photo/nature-landscape-with-starry-clear-sky_23-2151683218.jpg?semt=ais_user_personalization&w=740&q=80);*/
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -60,6 +62,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   /*background-attachment: fixed;*/
 }
 
@@ -109,7 +112,7 @@ nav ul li a:hover {
   gap: 30px;
 }
 
-/* .card {
+/*.card {
   background: white;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -120,6 +123,23 @@ nav ul li a:hover {
 .card:hover {
   transform: scale(1.05);
 }
+*/
+
+/*
+.card{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card:hover{
+    opacity: 0.8;
+}
+
 */
 
 .card{
@@ -146,7 +166,7 @@ nav ul li a:hover {
   0 0 40px #00ffff,
   0 0 80px #00ffff;
 }
-
+                    
 .card img {
   width: 100%;
   height: 200px;
@@ -160,6 +180,7 @@ nav ul li a:hover {
 .card p {
   padding: 0 15px 20px;
 }
+
 
 /* About Section */
 .about {
@@ -182,16 +203,6 @@ nav ul li a:hover {
   color: white;
 }
 
-/* .contact .btnn {
-  background-color: white;
-  color: #009688;
-}
-
-.contact .btnn:hover {
-  background-color: #f1f1f1;
-}
-*/
-
 .contact .btnn {
   background: linear-gradient(135deg,#667eea,#764ba2);
   color: #590a7e;
@@ -213,12 +224,14 @@ footer {
   text-align: center;
   padding: 15px;
 }
-/* Maldives Gallery Adjustments */
+
+
 #gallery .card img {
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
 }
+
 
 @media (max-width: 768px) {
 
@@ -255,4 +268,3 @@ footer {
     font-size: 14px;
   }
 }
-
